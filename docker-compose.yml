@@ -1,0 +1,17 @@
+# The name of the Docker Compose environment.
+name: devtiro-build-task-app
+services:
+  # The UI service.
+  ui:
+    # The UI Docker image, hosted on GitHub.
+    image: ghcr.io/devtiro/devtiro-build-task-app:latest
+    ports:
+      # Make the UI available on http://localhost:3000
+      - "3000:3000"
+    # Tell the UI how to find your Spring Boot app.
+    environment:
+      - BACKEND_HOST=host.docker.internal
+      - BACKEND_PORT=8080
+    # For Linux compatibility
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
