@@ -3,8 +3,8 @@ name: devtiro-build-task-app
 services:
   # The UI service.
   ui:
-    # Build the UI image from the source in the ui directory.
-    build: ./ui
+    # Build the UI image from the source in the frontend directory.
+    build: ./frontend
     ports:
       # Make the UI available on http://localhost:3000
       - "3000:3000"

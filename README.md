@@ -18,12 +18,12 @@ this repo. The Markdown guide above is the complete build.
 
 ## What's In This Repo
 
-| Path                 | Contents                                                  |
-| -------------------- | --------------------------------------------------------- |
-| `docs/`              | The build guide and its images                            |
-| `src/`               | The Spring Boot app, as built in the video                |
-| `ui/`                | The React UI, provided for you — Docker builds it for you |
-| `docker-compose.yml` | Builds and runs the UI, which talks to your app on 8080   |
+| Path                 | Contents                                                     |
+| -------------------- | ------------------------------------------------------------ |
+| `docs/`              | The build guide and its images                               |
+| `backend/`           | The Spring Boot app, as built in the video                   |
+| `frontend/`          | The React UI, provided for you — Docker builds it for you    |
+| `docker-compose.yml` | Builds and runs the frontend, which talks to the backend     |
 
 ## Running It
 
@@ -31,15 +31,16 @@ You'll need JDK 25 and Docker.
 
 ```bash
 # Run the Spring Boot app
+cd backend
 ./mvnw spring-boot:run
 
-# Build and start the UI, in a second terminal
+# Build and start the UI, in a second terminal, from the repository root
 docker compose up -d
 ```
 
-The UI is then available at http://localhost:3000 and expects your app on port 8080. Docker Compose
-builds the UI image from the source in `ui/` — the first run takes a minute or two, then it's cached.
-You don't need Node installed, and you don't need to know React.
+The UI is then available at http://localhost:3000 and expects the backend on port 8080. Docker Compose
+builds the UI image from the source in `frontend/` — the first run takes a minute or two, then it's
+cached. You don't need Node installed, and you don't need to know React.
 
 The app uses an in-memory H2 database, so there's no database to run — but the data is gone when you
 stop it.

@@ -1056,7 +1056,7 @@ To run the UI we'll use Docker Compose. This way we can build the UI Docker
 image and run it with all the configuration it needs to communicate with our
 Spring Boot app.
 
-The UI source code is in the `ui` directory of this repository, and Docker
+The UI source code is in the `frontend` directory of this repository, and Docker
 Compose will build it into an image for you. You don't need to know React, or
 install Node, to run it.
 
@@ -1075,8 +1075,8 @@ name: devtiro-build-task-app
 services:
   # The UI service.
   ui:
-    # Build the UI image from the source in the ui directory.
-    build: ./ui
+    # Build the UI image from the source in the frontend directory.
+    build: ./frontend
     ports:
       # Make the UI available on http://localhost:3000
       - '3000:3000'
