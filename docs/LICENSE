@@ -1,0 +1,35 @@
+Copyright (c) 2025 Devtiro Ltd
+
+The contents of this directory -- the Task App build guide, including the
+written material in task-app-v2-combined.md and the images in images/ -- are
+licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+International License (CC BY-NC-SA 4.0).
+
+To view a copy of this licence, visit:
+
+    https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+In summary, you are free to share and adapt this material, provided that:
+
+  Attribution   -- You give appropriate credit to Devtiro Ltd, provide a link
+                   to the licence, and indicate if changes were made.
+
+  NonCommercial -- You may not use this material for commercial purposes. It
+                   may not be sold, placed behind a paywall, or included in a
+                   paid course or product.
+
+  ShareAlike    -- If you remix, transform, or build upon this material, you
+                   must distribute your contributions under the same licence.
+
+The above is a human-readable summary of, and not a substitute for, the licence
+linked above.
+
+This material is provided as-is and without warranties of any kind. See Section
+5 of the licence for the full disclaimer of warranties and limitation of
+liability.
+
+NOTE: This licence applies to the docs/ directory only. The source code in this
+repository is licensed separately under the MIT License -- see the LICENSE file
+in the repository root.

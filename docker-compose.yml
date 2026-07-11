@@ -3,8 +3,8 @@ name: devtiro-build-task-app
 services:
   # The UI service.
   ui:
-    # The UI Docker image, hosted on GitHub.
-    image: ghcr.io/devtiro/devtiro-build-task-app:latest
+    # Build the UI image from the source in the ui directory.
+    build: ./ui
     ports:
       # Make the UI available on http://localhost:3000
       - "3000:3000"
